@@ -107,52 +107,7 @@ export function ServicesSection() {
           </ul>
         </div>
 
-        {/* Column 2: Add-ons */}
-        <div>
-          <h3
-            style={{
-              fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontWeight: 700,
-              fontSize: "clamp(16px, 1.8vw, 24px)",
-              color: "#383035",
-              marginBottom: "16px",
-            }}
-          >
-            Add-ons
-          </h3>
-          <ul
-            style={{
-              listStyle: "disc",
-              paddingLeft: "20px",
-              margin: 0,
-              fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              color: "#383035",
-            }}
-          >
-            {addOnItems.map((item) => (
-              <li key={item.text} style={{ marginBottom: "6px", lineHeight: 1.5, fontSize: "clamp(14px, 1.5vw, 20px)" }}>
-                {item.text}
-                {item.subItems && item.subItems.length > 0 && (
-                  <ul
-                    style={{
-                      listStyle: "circle",
-                      paddingLeft: "20px",
-                      marginTop: "4px",
-                    }}
-                  >
-                    {item.subItems.map((sub) => (
-                      <li key={sub} style={{ fontSize: "clamp(13px, 1.4vw, 18px)", marginBottom: "2px" }}>
-                        {sub}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Column 3: Package Bundles */}
+        {/* Column 2: Package Bundles */}
         <div className="col-span-2 md:col-span-1">
           <h3
             style={{
@@ -208,6 +163,51 @@ export function ServicesSection() {
               *30 days paid ad usage rights included*
             </p>
           </div>
+        </div>
+
+        {/* Column 3: Add-ons */}
+        <div>
+          <h3
+            style={{
+              fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
+              fontWeight: 700,
+              fontSize: "clamp(16px, 1.8vw, 24px)",
+              color: "#383035",
+              marginBottom: "16px",
+            }}
+          >
+            Add-ons
+          </h3>
+          <ul
+            style={{
+              listStyle: "disc",
+              paddingLeft: "20px",
+              margin: 0,
+              fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
+              color: "#383035",
+            }}
+          >
+            {addOnItems.map((item) => (
+              <li key={item.text} style={{ marginBottom: "6px", lineHeight: 1.5, fontSize: "clamp(14px, 1.5vw, 20px)" }}>
+                {item.text}
+                {item.subItems && item.subItems.length > 0 && (
+                  <ul
+                    style={{
+                      listStyle: "circle",
+                      paddingLeft: "20px",
+                      marginTop: "4px",
+                    }}
+                  >
+                    {item.subItems.map((sub) => (
+                      <li key={sub} style={{ fontSize: "clamp(13px, 1.4vw, 18px)", marginBottom: "2px" }}>
+                        {sub}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       </div>
