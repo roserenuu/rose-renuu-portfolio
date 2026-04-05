@@ -12,7 +12,7 @@ export function PhotographySection() {
           <h2
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "clamp(36px, 4.5vw, 62px)",
+              fontSize: "clamp(48px, 6vw, 86px)",
               fontWeight: 400,
               color: "#704608",
               lineHeight: 1,
@@ -46,7 +46,7 @@ export function PhotographySection() {
             gridTemplateColumns: "repeat(3, 1fr)",
             gridTemplateRows: "repeat(3, 1fr)",
             gap: "8px",
-            height: "580px",
+            height: "720px",
           }}
         >
           <div style={{ gridColumn: 1, gridRow: "1 / 3", backgroundColor: PLACEHOLDER }} />
