@@ -5,7 +5,7 @@ export function PhotographySection() {
     <section style={{ backgroundColor: "#f8faf0" }}>
       <div
         style={{ maxWidth: "1366px", margin: "0 auto" }}
-        className="flex flex-col md:flex-row md:items-center md:gap-[60px] px-5 py-10 md:px-[80px] md:py-[60px] min-h-[768px]"
+        className="flex flex-col md:flex-row md:items-center md:gap-[80px] px-5 py-16 md:px-[80px] md:py-[80px] min-h-[768px]"
       >
         {/* LEFT: text */}
         <div className="flex flex-col items-center md:w-[40%] shrink-0">
@@ -27,7 +27,7 @@ export function PhotographySection() {
               fontSize: "28px",
               color: "#383035",
               textAlign: "center",
-              margin: "16px 0 0",
+              margin: "24px 0 0",
               lineHeight: 1.3,
             }}
           >
@@ -45,7 +45,7 @@ export function PhotographySection() {
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
             gridTemplateRows: "repeat(3, 1fr)",
-            gap: "8px",
+            gap: "12px",
             height: "720px",
           }}
         >
