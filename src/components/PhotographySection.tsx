@@ -42,7 +42,6 @@ export function PhotographySection() {
           className="hidden md:grid"
           style={{
             flex: "1 1 60%",
-            display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
             gridTemplateRows: "repeat(3, 1fr)",
             gap: "12px",

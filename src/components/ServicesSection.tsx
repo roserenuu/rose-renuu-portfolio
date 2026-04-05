@@ -34,7 +34,7 @@ const addOnItems: ServiceItem[] = [
 
 export function ServicesSection() {
   return (
-    <section style={{ backgroundColor: "#f8faf0", borderTop: "3px solid #e8620a" }}>
+    <section style={{ backgroundColor: "#f8faf0" }}>
       <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "clamp(32px, 4.4vw, 60px) clamp(20px, 5.86vw, 80px)" }}>
       <h2
         style={{
@@ -63,8 +63,8 @@ export function ServicesSection() {
         *contact for rates and influencer collaborations
       </p>
 
-      {/* 3-column grid — always side by side */}
-      <div className="grid grid-cols-3" style={{ gap: "clamp(10px, 3vw, 40px)" }}>
+      {/* 3-column grid — stacked on mobile, side by side on desktop */}
+      <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: "clamp(16px, 3vw, 40px)" }}>
 
         {/* Column 1: UGC Video */}
         <div>
