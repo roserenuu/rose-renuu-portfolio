@@ -6,7 +6,7 @@ interface Brand {
 }
 
 const brands: Brand[] = [
-  { name: "Alani Nu", src: "/images/alani-nu.svg" },
+  { name: "Alani Nu", src: "/images/alani-nu.png" },
   { name: "Fashion Nova", src: "/images/fashion-nova.svg" },
   { name: "Hanskin", src: "/images/e0af249812fdf1921a8bccccb3229ec2.png" },
   { name: "Bend Skincare" },
