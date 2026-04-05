@@ -5,14 +5,14 @@ export function PhotographySection() {
     <section style={{ backgroundColor: "#f8faf0" }}>
       <div
         style={{ maxWidth: "1366px", margin: "0 auto" }}
-        className="flex flex-col md:flex-row md:items-center md:gap-[80px] px-5 py-16 md:px-[80px] md:py-[80px] min-h-[768px]"
+        className="flex flex-col md:flex-row md:items-center md:gap-[80px] px-5 py-8 md:px-[80px] md:py-[80px] md:min-h-[768px]"
       >
         {/* LEFT: text */}
         <div className="flex flex-col items-center md:w-[40%] shrink-0">
           <h2
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "clamp(48px, 6vw, 86px)",
+              fontSize: "clamp(36px, 6vw, 86px)",
               fontWeight: 400,
               color: "#704608",
               lineHeight: 1,
@@ -24,7 +24,7 @@ export function PhotographySection() {
           <p
             style={{
               fontFamily: '"MelanieSans", sans-serif',
-              fontSize: "28px",
+              fontSize: "clamp(16px, 2.5vw, 28px)",
               color: "#383035",
               textAlign: "center",
               margin: "24px 0 0",
@@ -65,7 +65,7 @@ export function PhotographySection() {
           {Array.from({ length: 6 }).map((_, i) => (
             <div
               key={i}
-              style={{ paddingBottom: "120%", position: "relative", backgroundColor: PLACEHOLDER }}
+              style={{ paddingBottom: "75%", position: "relative", backgroundColor: PLACEHOLDER }}
             />
           ))}
         </div>

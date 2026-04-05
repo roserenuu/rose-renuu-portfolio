@@ -41,7 +41,7 @@ export function IGStatsSection() {
           color: "#704608",
           textAlign: "center",
           lineHeight: 1,
-          margin: "0 0 40px 0",
+          margin: "0 0 clamp(16px, 2.5vw, 40px) 0",
         }}
       >
         IG Analytics &amp; Stats
@@ -50,7 +50,7 @@ export function IGStatsSection() {
       {/* TOP VIDEO GRID: 4 reel thumbnails */}
       <div
         className="flex flex-col md:flex-row w-full"
-        style={{ gap: "16px", marginTop: "32px" }}
+        style={{ gap: "16px" }}
       >
         {topReels.map((reel) => (
           <div

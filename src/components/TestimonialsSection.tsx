@@ -56,7 +56,7 @@ export function TestimonialsSection() {
           fontWeight: 400,
           color: "#000000",
           textAlign: "center",
-          marginBottom: "40px",
+          marginBottom: "clamp(20px, 3vw, 40px)",
           lineHeight: 1.1,
         }}
       >
@@ -79,7 +79,7 @@ export function TestimonialsSection() {
             <p
               style={{
                 color: "#f5b100",
-                fontSize: "24px",
+                fontSize: "clamp(16px, 2vw, 24px)",
                 marginBottom: "12px",
                 lineHeight: 1,
               }}
@@ -90,7 +90,7 @@ export function TestimonialsSection() {
             {/* Review text */}
             <p
               style={{
-                fontSize: "16px",
+                fontSize: "clamp(13px, 1.3vw, 16px)",
                 color: "#383035",
                 lineHeight: 1.6,
                 marginBottom: "20px",
