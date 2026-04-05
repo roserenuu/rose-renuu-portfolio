@@ -16,6 +16,7 @@ const brands: Brand[] = [
   { name: "Notion", src: "/images/notion.svg" },
   { name: "La Roche-Posay", src: "/images/la-roche-posay.png" },
   { name: "Glossier", src: "/images/glossier.png", fit: "cover", padding: "0" },
+  { name: "Good Molecules", src: "/images/good-molecules.png", fit: "cover", padding: "0" },
 ];
 
 function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
