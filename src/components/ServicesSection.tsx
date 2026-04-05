@@ -138,10 +138,10 @@ export function ServicesSection() {
                 margin: "0 0 16px 0",
               }}
             >
-              <li style={{ marginBottom: "4px" }}># concepts</li>
-              <li style={{ marginBottom: "4px" }}># hooks</li>
-              <li style={{ marginBottom: "4px" }}># CTAs</li>
-              <li style={{ marginBottom: "4px" }}># total deliverables</li>
+              <li style={{ marginBottom: "4px" }}>concepts</li>
+              <li style={{ marginBottom: "4px" }}>hooks</li>
+              <li style={{ marginBottom: "4px" }}>CTAs</li>
+              <li style={{ marginBottom: "4px" }}>total deliverables</li>
             </ul>
 
             {/* AD TESTER #2 */}
@@ -153,10 +153,10 @@ export function ServicesSection() {
                 margin: "0 0 16px 0",
               }}
             >
-              <li style={{ marginBottom: "4px" }}># concepts</li>
-              <li style={{ marginBottom: "4px" }}># hooks</li>
-              <li style={{ marginBottom: "4px" }}># CTAs</li>
-              <li style={{ marginBottom: "4px" }}># total deliverables</li>
+              <li style={{ marginBottom: "4px" }}>concepts</li>
+              <li style={{ marginBottom: "4px" }}>hooks</li>
+              <li style={{ marginBottom: "4px" }}>CTAs</li>
+              <li style={{ marginBottom: "4px" }}>total deliverables</li>
             </ul>
 
             <p style={{ fontStyle: "italic", fontSize: "clamp(13px, 1.3vw, 18px)" }}>
