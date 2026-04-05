@@ -58,8 +58,7 @@ export function IGStatsSection() {
               }}
             >
               @roserenuu
-            </a>{" "}
-            {"[140K+ community]"}
+            </a>
           </p>
         </div>
 
