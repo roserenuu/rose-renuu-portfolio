@@ -63,8 +63,8 @@ export function TestimonialsSection() {
         Client Testimonials
       </h2>
 
-      {/* 2×2 grid — single column on mobile */}
-      <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "24px" }}>
+      {/* 2×2 grid — always side by side */}
+      <div className="grid grid-cols-2" style={{ gap: "clamp(10px, 2vw, 24px)" }}>
         {testimonials.map((t) => (
           <div
             key={t.name + t.company}
