@@ -33,28 +33,20 @@ export function IGStatsSection() {
     <section style={{ backgroundColor: "#ecede8" }} className="w-full">
       <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "min(4.4vw, 60px) min(5.86vw, 80px)" }}>
       {/* UPPER AREA: two-column row */}
-      <div className="flex flex-col md:flex-row w-full gap-8">
-
-        {/* Right ~60%: heading */}
-        <div
-          className="flex items-start justify-end"
-          style={{ flex: "0 0 60%", maxWidth: "60%" }}
-        >
-          <h2
-            style={{
-              fontFamily: '"MelanieDisplay", serif',
-              fontSize: "min(7.03vw, 96px)",
-              fontWeight: 400,
-              color: "#704608",
-              textAlign: "right",
-              lineHeight: 1,
-              margin: 0,
-            }}
-          >
-            IG analytics &amp; stats
-          </h2>
-        </div>
-      </div>
+      <h2
+        style={{
+          fontFamily: '"MelanieDisplay", serif',
+          fontSize: "min(5.27vw, 72px)",
+          fontWeight: 400,
+          color: "#704608",
+          textAlign: "center",
+          lineHeight: 1,
+          margin: "0 0 40px 0",
+          whiteSpace: "nowrap",
+        }}
+      >
+        IG Analytics &amp; Stats
+      </h2>
 
       {/* TOP VIDEO GRID: 4 reel thumbnails */}
       <div
