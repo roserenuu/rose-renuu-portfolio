@@ -3,11 +3,13 @@ import Image from "next/image";
 interface Brand {
   name: string;
   src?: string;
+  fit?: "contain" | "cover";
+  padding?: string;
 }
 
 const brands: Brand[] = [
-  { name: "Alani Nu", src: "/images/alani-nu.png" },
-  { name: "Fashion Nova", src: "/images/fashion-nova.svg" },
+  { name: "Alani Nu", src: "/images/alani-nu.png", fit: "cover" },
+  { name: "Fashion Nova", src: "/images/fashion-nova.svg", padding: "10px" },
   { name: "Hanskin", src: "/images/e0af249812fdf1921a8bccccb3229ec2.png" },
   { name: "Bend Skincare" },
   { name: "Prime", src: "/images/prime.svg" },
@@ -32,7 +34,7 @@ function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
           src={brand.src}
           alt={brand.name}
           fill
-          style={{ objectFit: "contain", padding: "20px" }}
+          style={{ objectFit: brand.fit ?? "contain", padding: brand.padding ?? "20px" }}
           sizes={`${size}px`}
         />
       </div>
