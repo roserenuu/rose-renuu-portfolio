@@ -17,6 +17,7 @@ const brands: Brand[] = [
   { name: "La Roche-Posay", src: "/images/la-roche-posay.png" },
   { name: "Glossier", src: "/images/glossier.png", fit: "cover", padding: "0" },
   { name: "Good Molecules", src: "/images/good-molecules.png", fit: "cover", padding: "0" },
+  { name: "Forever Yours", src: "/images/forever-yours.png", padding: "12px" },
 ];
 
 const circleSize = "clamp(110px, 14vw, 160px)";
