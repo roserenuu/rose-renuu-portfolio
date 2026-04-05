@@ -1,34 +1,44 @@
 export function HeroSection() {
+  const iconSize = "clamp(30px, 8vw, 50px)";
+  const iconRadius = "clamp(6px, 1.5vw, 10px)";
+  const svgSize = "clamp(15px, 4vw, 24px)";
+
+  const iconStyle = {
+    width: iconSize,
+    height: iconSize,
+    borderRadius: iconRadius,
+    backgroundColor: "#704608",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0 as const,
+  };
+
   return (
-    <section
-      style={{ backgroundColor: "#ecede8" }}
-      className="w-full flex items-stretch"
-    >
+    <section style={{ backgroundColor: "#ecede8" }} className="w-full">
       <div
         style={{
-          padding: "min(4.4vw, 60px) min(5.86vw, 80px)",
-          gap: "min(4.4vw, 60px)",
           maxWidth: "1366px",
           margin: "0 auto",
-          width: "100%",
+          gap: "clamp(12px, 4.4vw, 60px)",
+          padding: "clamp(16px, 4.4vw, 60px) clamp(12px, 5.86vw, 80px)",
         }}
-        className="flex flex-col md:flex-row w-full"
+        className="flex flex-row w-full"
       >
         {/* LEFT COLUMN */}
         <div
-          style={{ gap: "20px" }}
-          className="flex flex-col items-center md:w-[45%] w-full"
+          className="flex flex-col items-center w-[42%] md:w-[45%] shrink-0"
+          style={{ gap: "clamp(8px, 1.5vw, 20px)" }}
         >
           {/* Portrait photo */}
           <img
             src="/images/rose-renuu-headshot.jpg"
             alt="Rose Renuu portrait"
             style={{
-              width: "clamp(200px, 75vw, 430px)",
-              height: "clamp(200px, 75vw, 430px)",
+              width: "100%",
+              maxWidth: "430px",
+              aspectRatio: "1 / 1",
               objectFit: "cover",
-              borderRadius: 0,
-              maxWidth: "100%",
             }}
           />
 
@@ -36,10 +46,11 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "24px",
+              fontSize: "clamp(10px, 2.5vw, 24px)",
               color: "#60590c",
               fontWeight: 400,
               margin: 0,
+              textAlign: "center",
             }}
           >
             Based in Los Angeles, CA
@@ -49,110 +60,44 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "27px",
+              fontSize: "clamp(9px, 2.2vw, 22px)",
               color: "#60590c",
               margin: 0,
               textAlign: "center",
+              lineHeight: 1.4,
             }}
           >
             Contact:{" "}
             <a
               href="mailto:roserenuu@gmail.com"
-              style={{
-                color: "#60590c",
-                textDecoration: "underline",
-              }}
+              style={{ color: "#60590c", textDecoration: "underline" }}
             >
               roserenuu@gmail.com
             </a>
           </p>
 
-          {/* Social icons row */}
-          <div className="flex flex-row items-center" style={{ gap: "12px" }}>
-            {/* TikTok */}
-            <a
-              href="https://www.tiktok.com/@roserenuu"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "10px",
-                backgroundColor: "#704608",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-              aria-label="TikTok"
-            >
-              <svg viewBox="0 0 24 24" fill="white" style={{ width: "24px", height: "24px" }}>
+          {/* Social icons */}
+          <div
+            className="flex flex-row flex-wrap justify-center"
+            style={{ gap: "clamp(5px, 1.5vw, 12px)" }}
+          >
+            <a href="https://www.tiktok.com/@roserenuu" target="_blank" rel="noopener noreferrer" style={iconStyle} aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="white" style={{ width: svgSize, height: svgSize }}>
                 <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.83a8.21 8.21 0 004.79 1.54V7.93a4.86 4.86 0 01-1.02-.24z" />
               </svg>
             </a>
-
-            {/* Instagram */}
-            <a
-              href="https://www.instagram.com/roserenuu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "10px",
-                backgroundColor: "#704608",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-              aria-label="Instagram"
-            >
-              <svg viewBox="0 0 24 24" fill="white" style={{ width: "24px", height: "24px" }}>
+            <a href="https://www.instagram.com/roserenuu/" target="_blank" rel="noopener noreferrer" style={iconStyle} aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="white" style={{ width: svgSize, height: svgSize }}>
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
               </svg>
             </a>
-
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/roserenuulive"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "10px",
-                backgroundColor: "#704608",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-              aria-label="Facebook"
-            >
-              <svg viewBox="0 0 24 24" fill="white" style={{ width: "24px", height: "24px" }}>
+            <a href="https://www.facebook.com/roserenuulive" target="_blank" rel="noopener noreferrer" style={iconStyle} aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="white" style={{ width: svgSize, height: svgSize }}>
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>
             </a>
-
-            {/* YouTube */}
-            <a
-              href="https://www.youtube.com/@RoseRenuu"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "10px",
-                backgroundColor: "#704608",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-              aria-label="YouTube"
-            >
-              <svg viewBox="0 0 24 24" fill="white" style={{ width: "24px", height: "24px" }}>
+            <a href="https://www.youtube.com/@RoseRenuu" target="_blank" rel="noopener noreferrer" style={iconStyle} aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="white" style={{ width: svgSize, height: svgSize }}>
                 <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
             </a>
@@ -161,14 +106,16 @@ export function HeroSection() {
 
         {/* RIGHT COLUMN */}
         <div
-          style={{ gap: "16px" }}
-          className="flex flex-col md:w-[55%] w-full pt-8 md:pt-[80px]"
+          className="flex flex-col flex-1"
+          style={{
+            gap: "clamp(6px, 1.5vw, 16px)",
+            paddingTop: "clamp(6px, 2vw, 80px)",
+          }}
         >
-          {/* Meet Melanie heading */}
           <h1
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "min(6.3vw, 86px)",
+              fontSize: "clamp(22px, 6.3vw, 86px)",
               fontWeight: 400,
               color: "#704608",
               letterSpacing: "-0.04em",
@@ -179,11 +126,10 @@ export function HeroSection() {
             Meet Rose
           </h1>
 
-          {/* UGC CREATOR label */}
           <p
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "clamp(18px, 2.34vw, 32px)",
+              fontSize: "clamp(12px, 2.34vw, 32px)",
               fontWeight: 700,
               color: "#704608",
               margin: 0,
@@ -192,16 +138,16 @@ export function HeroSection() {
             UGC CREATOR
           </p>
 
-          {/* Bullet list */}
           <ul
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "clamp(16px, 2.34vw, 32px)",
+              fontSize: "clamp(11px, 2.34vw, 32px)",
               color: "#383035",
               fontWeight: 400,
               margin: 0,
-              paddingLeft: "28px",
+              paddingLeft: "clamp(14px, 3vw, 28px)",
               listStyleType: "disc",
+              lineHeight: 1.5,
             }}
           >
             <li>Gen Z creator (27 years old)</li>
@@ -211,9 +157,6 @@ export function HeroSection() {
             <li>Speaks English and basic Nepali</li>
             <li>Entrepreneur, author, and creator of 245k+</li>
           </ul>
-
-
-          {/* Stats images */}
         </div>
       </div>
     </section>
