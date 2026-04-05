@@ -21,7 +21,7 @@ export function HeroSection() {
           maxWidth: "1366px",
           margin: "0 auto",
           gap: "clamp(12px, 4.4vw, 60px)",
-          padding: "clamp(16px, 4.4vw, 60px) clamp(12px, 5.86vw, 80px)",
+          padding: "clamp(36px, 4.4vw, 60px) clamp(20px, 5.86vw, 80px)",
         }}
         className="flex flex-row w-full"
       >
