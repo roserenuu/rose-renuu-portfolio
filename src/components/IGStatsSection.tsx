@@ -55,8 +55,7 @@ export function IGStatsSection() {
         {topReels.map((reel) => (
           <div
             key={reel.src}
-            className="relative overflow-hidden"
-            className="h-[220px] md:h-[420px]"
+            className="relative overflow-hidden h-[220px] md:h-[420px]"
             style={{ flex: 1, backgroundColor: "#c8bfb0" }}
           />
         ))}

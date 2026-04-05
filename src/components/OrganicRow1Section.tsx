@@ -42,8 +42,7 @@ export function OrganicRow1Section() {
           <div key={card.src}>
             {/* Thumbnail with play overlay */}
             <div
-              className="relative overflow-hidden"
-              className="h-[280px] md:h-[500px]"
+              className="relative overflow-hidden h-[280px] md:h-[500px]"
               style={{ width: "100%", backgroundColor: "#b3a090" }}
             >
               {/* Play button */}
