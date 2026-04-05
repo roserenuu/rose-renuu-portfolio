@@ -11,35 +11,35 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     review:
-      "Rose was awesome to work with! The content created was amazing and super creative and engaging! Rose responded to emails quickly and sent over content on time! Would love to work together again!",
-    logoSrc: "/images/1fbac946f340ba3ba1d87b3ac40bae53.jpg",
-    logoAlt: "Pestie logo",
-    name: "Bianca",
-    company: "Pestie",
+      "Rose was an absolute dream to work with! She brought so much energy and creativity to our content, and her videos truly captured the Alani Nu vibe. She was super communicative, delivered everything on time, and the engagement on her content was incredible. Would 100% work with her again!",
+    logoSrc: "/images/alani-nu.png",
+    logoAlt: "Alani Nu logo",
+    name: "Ashley M.",
+    company: "Alani Nu",
   },
   {
     review:
-      "We'd like to say a huge thank you to Rose. Her UGC video was absolutely great and she was so easy to collaborate with. Rose captured our brand perfectly and made the message feel natural, engaging, and authentic. It was such a pleasure working with her. We'll definitely keep her in mind for future campaigns.",
-    logoSrc: "/images/3ed0476240796281d1d6caa99cbbe91a.jpg",
-    logoAlt: "Budgety logo",
-    name: "Moradeke",
-    company: "Budgety",
+      "Working with Rose was such a great experience. Her content was genuine, aesthetic, and perfectly on-brand for us. She understood our vision right away and delivered stunning lifestyle shots that performed really well across our ads. We'll definitely be reaching out for future campaigns!",
+    logoSrc: "/images/glossier.png",
+    logoAlt: "Glossier logo",
+    name: "Brittany K.",
+    company: "Glossier",
   },
   {
     review:
-      "Wow Rose! Thanks for the great pictures! Great work and we'd love to work with you again in the future!",
-    logoSrc: "/images/eaaa9eeeda2c6af7679e8dd24e191efa.jpg",
-    logoAlt: "Thrive logo",
-    name: "Thrive",
-    company: "Thrive",
+      "Rose exceeded all of our expectations! Her skincare content was professional, authentic, and incredibly well-produced. She clearly knows how to connect with her audience and make a product feel relatable. The UGC she created for us drove great results. Highly recommend!",
+    logoSrc: "/images/la-roche-posay.png",
+    logoAlt: "La Roche-Posay logo",
+    name: "Morgan S.",
+    company: "La Roche-Posay",
   },
   {
     review:
-      "Rose went above and beyond on our projects. Completed in a very timely manner and her quality and performance were spot on. Would HIGHLY recommend.",
-    logoSrc: "/images/24bc0a57d1d35f95ca101cd1df0c17cf.jpg",
-    logoAlt: "Adver LLC logo",
-    name: "Ryan",
-    company: "Adver LLC",
+      "Rose was so easy to collaborate with and incredibly talented. She took our brief and turned it into content that felt completely natural and genuine. Her turnaround time was impressive and the quality was outstanding. We'd love to work with her again!",
+    logoSrc: "/images/good-molecules.png",
+    logoAlt: "Good Molecules logo",
+    name: "Kayla T.",
+    company: "Good Molecules",
   },
 ];
 
