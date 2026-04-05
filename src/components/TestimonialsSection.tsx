@@ -6,6 +6,7 @@ interface Testimonial {
   logoAlt: string;
   name: string;
   company: string;
+  logoFit?: "contain" | "cover";
 }
 
 const testimonials: Testimonial[] = [
@@ -19,15 +20,16 @@ const testimonials: Testimonial[] = [
   },
   {
     review:
-      "Working with Rose was such a great experience. Her content was genuine, aesthetic, and perfectly on-brand for us. She understood our vision right away and delivered stunning lifestyle shots that performed really well across our ads. We'll definitely be reaching out for future campaigns!",
+      "Working with Rose was such a great experience. Her content was genuine, aesthetic, and perfectly on brand for us. She understood our vision right away and delivered stunning lifestyle shots that performed really well across our ads. We'll definitely be reaching out for future campaigns!",
     logoSrc: "/images/glossier.png",
     logoAlt: "Glossier logo",
     name: "Brittany K.",
     company: "Glossier",
+    logoFit: "cover",
   },
   {
     review:
-      "Rose exceeded all of our expectations! Her skincare content was professional, authentic, and incredibly well-produced. She clearly knows how to connect with her audience and make a product feel relatable. The UGC she created for us drove great results. Highly recommend!",
+      "Rose exceeded all of our expectations! Her skincare content was professional, authentic, and incredibly well produced. She clearly knows how to connect with her audience and make a product feel relatable. The UGC she created for us drove great results. Highly recommend!",
     logoSrc: "/images/la-roche-posay.png",
     logoAlt: "La Roche-Posay logo",
     name: "Morgan S.",
@@ -120,7 +122,7 @@ export function TestimonialsSection() {
                   src={t.logoSrc}
                   alt={t.logoAlt}
                   fill
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: t.logoFit ?? "contain" }}
                   sizes="40px"
                 />
               </div>
