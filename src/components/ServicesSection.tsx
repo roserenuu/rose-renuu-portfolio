@@ -35,7 +35,7 @@ const addOnItems: ServiceItem[] = [
 export function ServicesSection() {
   return (
     <section style={{ backgroundColor: "#f8faf0", borderTop: "3px solid #e8620a" }}>
-      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "min(4.4vw, 60px) min(5.86vw, 80px)" }}>
+      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "clamp(32px, 4.4vw, 60px) clamp(20px, 5.86vw, 80px)" }}>
       <h2
         style={{
           fontFamily: '"MelanieDisplay", serif',

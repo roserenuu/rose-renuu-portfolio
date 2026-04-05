@@ -35,7 +35,7 @@ const cards: VideoCard[] = [
 export function OrganicRow1Section() {
   return (
     <section style={{ backgroundColor: "#c8bbaa" }}>
-      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "min(4.4vw, 60px) min(5.86vw, 80px)" }}>
+      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "clamp(32px, 4.4vw, 60px) clamp(20px, 5.86vw, 80px)" }}>
       {/* 4-column grid — collapses to 2 on mobile */}
       <div className="grid grid-cols-2 md:grid-cols-4" style={{ gap: "16px" }}>
         {cards.map((card) => (

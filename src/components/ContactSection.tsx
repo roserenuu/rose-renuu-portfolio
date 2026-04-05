@@ -40,7 +40,7 @@ export function ContactSection() {
             fontWeight: 400,
             color: "#704608",
             lineHeight: 1.1,
-            marginBottom: "40px",
+            marginBottom: "clamp(20px, 3vw, 40px)",
             margin: "0 0 40px 0",
           }}
         >
@@ -55,7 +55,7 @@ export function ContactSection() {
             fontWeight: 700,
             color: "#704608",
             textDecoration: "underline",
-            marginBottom: "40px",
+            marginBottom: "clamp(20px, 3vw, 40px)",
             display: "block",
           }}
         >

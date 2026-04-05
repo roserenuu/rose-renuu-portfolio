@@ -31,7 +31,7 @@ const bottomReels = [
 export function IGStatsSection() {
   return (
     <section style={{ backgroundColor: "#ecede8" }} className="w-full">
-      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "min(4.4vw, 60px) min(5.86vw, 80px)" }}>
+      <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "clamp(32px, 4.4vw, 60px) clamp(20px, 5.86vw, 80px)" }}>
       {/* UPPER AREA: two-column row */}
       <h2
         style={{
