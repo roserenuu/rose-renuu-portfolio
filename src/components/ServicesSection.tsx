@@ -63,8 +63,8 @@ export function ServicesSection() {
         *contact for rates and influencer collaborations
       </p>
 
-      {/* 3-column grid — 2 cols on mobile, 3 on desktop */}
-      <div className="grid grid-cols-2 md:grid-cols-3" style={{ gap: "clamp(16px, 3vw, 40px)" }}>
+      {/* 3-column grid — always side by side */}
+      <div className="grid grid-cols-3" style={{ gap: "clamp(10px, 3vw, 40px)" }}>
 
         {/* Column 1: UGC Video */}
         <div>
@@ -108,7 +108,7 @@ export function ServicesSection() {
         </div>
 
         {/* Column 2: Package Bundles */}
-        <div className="col-span-2 md:col-span-1">
+        <div>
           <h3
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
