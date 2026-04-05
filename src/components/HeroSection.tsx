@@ -46,7 +46,7 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "clamp(10px, 2.5vw, 24px)",
+              fontSize: "clamp(13px, 2.5vw, 24px)",
               color: "#60590c",
               fontWeight: 400,
               margin: 0,
@@ -60,7 +60,7 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "clamp(9px, 2.2vw, 22px)",
+              fontSize: "clamp(12px, 2.2vw, 22px)",
               color: "#60590c",
               margin: 0,
               textAlign: "center",
@@ -129,7 +129,7 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "clamp(12px, 2.34vw, 32px)",
+              fontSize: "clamp(15px, 2.34vw, 32px)",
               fontWeight: 700,
               color: "#704608",
               margin: 0,
@@ -141,7 +141,7 @@ export function HeroSection() {
           <ul
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "clamp(11px, 2.34vw, 32px)",
+              fontSize: "clamp(13px, 2.34vw, 32px)",
               color: "#383035",
               fontWeight: 400,
               margin: 0,
