@@ -67,7 +67,7 @@ export function ServicesSection() {
       <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: "clamp(16px, 3vw, 40px)" }}>
 
         {/* Column 1: UGC Video */}
-        <div>
+        <div className="services-col">
           <h3
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
@@ -108,7 +108,7 @@ export function ServicesSection() {
         </div>
 
         {/* Column 2: Package Bundles */}
-        <div>
+        <div className="services-col">
           <h3
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
@@ -166,7 +166,7 @@ export function ServicesSection() {
         </div>
 
         {/* Column 3: Add-ons */}
-        <div>
+        <div className="services-col">
           <h3
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',

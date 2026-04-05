@@ -69,6 +69,24 @@ export function PhotographySection() {
           ))}
         </div>
       </div>
+
+      {/* EXTRA ROWS: 2 more rows of placement cards */}
+      <div
+        style={{ maxWidth: "1366px", margin: "0 auto", paddingBottom: "clamp(32px, 4.4vw, 60px)" }}
+        className="px-5 md:px-[80px]"
+      >
+        <div
+          className="grid grid-cols-2 md:grid-cols-3"
+          style={{ gap: "12px" }}
+        >
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={i}
+              style={{ aspectRatio: "3 / 4", backgroundColor: PLACEHOLDER }}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

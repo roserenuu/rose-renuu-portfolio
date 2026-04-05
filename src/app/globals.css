@@ -124,3 +124,17 @@
   }
 }
 
+
+/* Services columns: centered on mobile, left-aligned on desktop */
+@media (max-width: 767px) {
+  .services-col {
+    text-align: center;
+  }
+  .services-col ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .services-col li {
+    margin-left: 0 !important;
+  }
+}
