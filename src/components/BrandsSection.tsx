@@ -11,7 +11,7 @@ const brands: Brand[] = [
   { name: "Alani Nu", src: "/images/alani-nu.png", fit: "cover", padding: "0" },
   { name: "Fashion Nova", src: "/images/fashion-nova.svg", padding: "10px" },
   { name: "Hanskin", src: "/images/e0af249812fdf1921a8bccccb3229ec2.png" },
-  { name: "Bend Skincare" },
+
   { name: "Prime", src: "/images/prime.svg" },
   { name: "Notion", src: "/images/notion.svg" },
 ];
