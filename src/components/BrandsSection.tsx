@@ -8,8 +8,8 @@ interface Brand {
 const brands: Brand[] = [
   { name: "Alani Nu", src: "/images/alani-nu.svg" },
   { name: "Fashion Nova", src: "/images/fashion-nova.svg" },
-  { name: "Hanskin", src: "/images/43e29b4b43e3c2eea153922b81e0c381.jpg" },
-  { name: "Bend Skincare", src: "/images/e0af249812fdf1921a8bccccb3229ec2.png" },
+  { name: "Hanskin", src: "/images/e0af249812fdf1921a8bccccb3229ec2.png" },
+  { name: "Bend Skincare" },
   { name: "Prime", src: "/images/prime.svg" },
   { name: "Notion", src: "/images/notion.svg" },
 ];
