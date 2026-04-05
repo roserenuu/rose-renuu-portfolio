@@ -57,15 +57,15 @@ export function PhotographySection() {
           <div style={{ gridColumn: "1 / 3", gridRow: 3, backgroundColor: PLACEHOLDER }} />
         </div>
 
-        {/* RIGHT: 2-column grid — mobile only */}
+        {/* RIGHT: 2 portrait cards — mobile only */}
         <div
-          className="grid md:hidden mt-6"
-          style={{ gridTemplateColumns: "1fr 1fr", gap: "8px", width: "100%" }}
+          className="flex md:hidden mt-6"
+          style={{ gap: "8px", width: "100%" }}
         >
-          {Array.from({ length: 4 }).map((_, i) => (
+          {Array.from({ length: 2 }).map((_, i) => (
             <div
               key={i}
-              style={{ aspectRatio: "1 / 1", backgroundColor: PLACEHOLDER }}
+              style={{ flex: 1, aspectRatio: "3 / 4", backgroundColor: PLACEHOLDER }}
             />
           ))}
         </div>
