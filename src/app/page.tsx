@@ -27,6 +27,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <Blend from="#ecede8" to="#e9e9e9" />
       <BrandsSection />
       <Blend from="#e9e9e9" to="#ecede8" />
       <IGStatsSection />

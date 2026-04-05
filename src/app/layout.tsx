@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ScrollAnimator } from "@/components/ScrollAnimator";
 
 export const metadata: Metadata = {
   title: "Rose Renuu | UGC Creator",
@@ -15,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col">
-        <ScrollAnimator />
         {children}
       </body>
     </html>

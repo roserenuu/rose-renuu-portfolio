@@ -124,15 +124,3 @@
   }
 }
 
-/* Scroll-triggered entrance animations */
-main > section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-main > section.section-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
