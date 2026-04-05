@@ -12,7 +12,7 @@ export function PhotographySection() {
           <h2
             style={{
               fontFamily: '"MelanieDisplay", serif',
-              fontSize: "clamp(56px, 8vw, 100px)",
+              fontSize: "clamp(36px, 4.5vw, 62px)",
               fontWeight: 400,
               color: "#704608",
               lineHeight: 1,
