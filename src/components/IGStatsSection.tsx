@@ -34,33 +34,6 @@ export function IGStatsSection() {
       <div style={{ maxWidth: "1366px", margin: "0 auto", padding: "min(4.4vw, 60px) min(5.86vw, 80px)" }}>
       {/* UPPER AREA: two-column row */}
       <div className="flex flex-col md:flex-row w-full gap-8">
-        {/* Left ~40%: handle + community label */}
-        <div
-          className="flex items-start"
-          style={{ flex: "0 0 40%", maxWidth: "40%" }}
-        >
-          <p
-            style={{
-              fontFamily: '"MelanieDisplay", serif',
-              fontSize: "min(1.76vw, 24px)",
-              fontWeight: 400,
-              color: "#60590c",
-              lineHeight: 1.3,
-            }}
-          >
-            <a
-              href="https://www.instagram.com/roserenuu"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#60590c",
-                textDecoration: "underline",
-              }}
-            >
-              @roserenuu
-            </a>
-          </p>
-        </div>
 
         {/* Right ~60%: heading */}
         <div
