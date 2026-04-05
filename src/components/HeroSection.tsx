@@ -141,7 +141,7 @@ export function HeroSection() {
           <ul
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "clamp(13px, 2.34vw, 32px)",
+              fontSize: "clamp(16px, 2.34vw, 32px)",
               color: "#383035",
               fontWeight: 400,
               margin: 0,
