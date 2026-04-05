@@ -72,7 +72,7 @@ export function ServicesSection() {
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
               fontWeight: 700,
-              fontSize: "20px",
+              fontSize: "24px",
               color: "#383035",
               marginBottom: "16px",
             }}
@@ -92,7 +92,7 @@ export function ServicesSection() {
               <li
                 key={item.text}
                 style={{
-                  fontSize: item.small ? "14px" : "16px",
+                  fontSize: item.small ? "16px" : "20px",
                   fontStyle: item.italic ? "italic" : "normal",
                   listStyle: item.italic ? "none" : "disc",
                   marginLeft: item.italic ? "-20px" : "0",
@@ -113,7 +113,7 @@ export function ServicesSection() {
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
               fontWeight: 700,
-              fontSize: "20px",
+              fontSize: "24px",
               color: "#383035",
               marginBottom: "16px",
             }}
@@ -130,7 +130,7 @@ export function ServicesSection() {
             }}
           >
             {addOnItems.map((item) => (
-              <li key={item.text} style={{ marginBottom: "6px", lineHeight: 1.5, fontSize: "16px" }}>
+              <li key={item.text} style={{ marginBottom: "6px", lineHeight: 1.5, fontSize: "20px" }}>
                 {item.text}
                 {item.subItems && item.subItems.length > 0 && (
                   <ul
@@ -141,7 +141,7 @@ export function ServicesSection() {
                     }}
                   >
                     {item.subItems.map((sub) => (
-                      <li key={sub} style={{ fontSize: "15px", marginBottom: "2px" }}>
+                      <li key={sub} style={{ fontSize: "18px", marginBottom: "2px" }}>
                         {sub}
                       </li>
                     ))}
@@ -158,7 +158,7 @@ export function ServicesSection() {
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
               fontWeight: 700,
-              fontSize: "20px",
+              fontSize: "24px",
               color: "#383035",
               marginBottom: "16px",
             }}
@@ -170,7 +170,7 @@ export function ServicesSection() {
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
               color: "#383035",
-              fontSize: "16px",
+              fontSize: "20px",
               lineHeight: 1.6,
             }}
           >
@@ -204,7 +204,7 @@ export function ServicesSection() {
               <li style={{ marginBottom: "4px" }}># total deliverables</li>
             </ul>
 
-            <p style={{ fontStyle: "italic", fontSize: "15px" }}>
+            <p style={{ fontStyle: "italic", fontSize: "18px" }}>
               *30 days paid ad usage rights included*
             </p>
           </div>
