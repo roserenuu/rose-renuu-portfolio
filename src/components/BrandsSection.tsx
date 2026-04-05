@@ -19,7 +19,7 @@ const brands: Brand[] = [
   { name: "Good Molecules", src: "/images/good-molecules.png", fit: "cover", padding: "0" },
 ];
 
-const circleSize = "clamp(90px, 11vw, 160px)";
+const circleSize = "clamp(110px, 14vw, 160px)";
 
 function BrandCircle({ brand }: { brand: Brand }) {
   if (brand.src) {
@@ -95,8 +95,12 @@ export function BrandsSection() {
         </h2>
 
         <div
-          className="grid grid-cols-2 md:grid-cols-4"
-          style={{ gap: "clamp(12px, 2vw, 24px)", justifyItems: "center" }}
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "clamp(12px, 2vw, 24px)",
+          }}
         >
           {brands.map((brand) => (
             <BrandCircle key={brand.name} brand={brand} />

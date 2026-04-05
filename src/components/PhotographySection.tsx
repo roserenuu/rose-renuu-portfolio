@@ -59,13 +59,13 @@ export function PhotographySection() {
 
         {/* RIGHT: 2-column grid — mobile only */}
         <div
-          className="grid md:hidden mt-8"
+          className="grid md:hidden mt-6"
           style={{ gridTemplateColumns: "1fr 1fr", gap: "8px", width: "100%" }}
         >
-          {Array.from({ length: 6 }).map((_, i) => (
+          {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
-              style={{ paddingBottom: "75%", position: "relative", backgroundColor: PLACEHOLDER }}
+              style={{ aspectRatio: "1 / 1", backgroundColor: PLACEHOLDER }}
             />
           ))}
         </div>
