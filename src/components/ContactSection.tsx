@@ -11,8 +11,8 @@ export function ContactSection() {
       <div className="flex justify-center md:justify-start md:w-[45%] shrink-0 mb-10 md:mb-0">
         <div
           style={{
-            width: "400px",
-            height: "400px",
+            width: "clamp(240px, 70vw, 400px)",
+            height: "clamp(240px, 70vw, 400px)",
             borderRadius: "50%",
             overflow: "hidden",
             position: "relative",
@@ -51,7 +51,7 @@ export function ContactSection() {
           href="mailto:roserenuu@gmail.com"
           style={{
             fontFamily: '"MelanieSans", sans-serif',
-            fontSize: "32px",
+            fontSize: "clamp(18px, 3.5vw, 32px)",
             fontWeight: 700,
             color: "#704608",
             textDecoration: "underline",

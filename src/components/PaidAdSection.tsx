@@ -59,7 +59,8 @@ export function PaidAdSection() {
             {/* Thumbnail with play overlay */}
             <div
               className="relative overflow-hidden"
-              style={{ height: "500px", width: "100%", backgroundColor: "#c4a882" }}
+              className="h-[280px] md:h-[500px]"
+              style={{ width: "100%", backgroundColor: "#c4a882" }}
             >
               {/* Play button */}
               <div
@@ -93,7 +94,7 @@ export function PaidAdSection() {
               <p
                 style={{
                   fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-                  fontSize: "24px",
+                  fontSize: "clamp(15px, 2vw, 24px)",
                   fontWeight: 400,
                   color: "#fffaf1",
                   margin: 0,
@@ -104,7 +105,7 @@ export function PaidAdSection() {
               <p
                 style={{
                   fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-                  fontSize: "24px",
+                  fontSize: "clamp(15px, 2vw, 24px)",
                   fontWeight: 700,
                   color: "#fffaf1",
                   margin: 0,

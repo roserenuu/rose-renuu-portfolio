@@ -68,10 +68,10 @@ export function TestimonialsSection() {
         {testimonials.map((t) => (
           <div
             key={t.name + t.company}
+            className="p-4 md:p-8"
             style={{
               backgroundColor: "#ffffff",
               borderRadius: "8px",
-              padding: "24px 32px",
               border: "1px solid rgba(0,0,0,0.08)",
             }}
           >

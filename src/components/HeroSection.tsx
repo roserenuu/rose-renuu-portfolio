@@ -1,7 +1,7 @@
 export function HeroSection() {
   return (
     <section
-      style={{ backgroundColor: "#ecede8", minHeight: "882px" }}
+      style={{ backgroundColor: "#ecede8" }}
       className="w-full flex items-stretch"
     >
       <div
@@ -24,8 +24,8 @@ export function HeroSection() {
             src="/images/rose-renuu-headshot.jpg"
             alt="Rose Renuu portrait"
             style={{
-              width: "min(31.5vw, 430px)",
-              height: "min(31.5vw, 430px)",
+              width: "clamp(200px, 75vw, 430px)",
+              height: "clamp(200px, 75vw, 430px)",
               objectFit: "cover",
               borderRadius: 0,
               maxWidth: "100%",
@@ -161,8 +161,8 @@ export function HeroSection() {
 
         {/* RIGHT COLUMN */}
         <div
-          style={{ paddingTop: "80px", gap: "16px" }}
-          className="flex flex-col md:w-[55%] w-full"
+          style={{ gap: "16px" }}
+          className="flex flex-col md:w-[55%] w-full pt-8 md:pt-[80px]"
         >
           {/* Meet Melanie heading */}
           <h1
@@ -183,7 +183,7 @@ export function HeroSection() {
           <p
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "min(2.34vw, 32px)",
+              fontSize: "clamp(18px, 2.34vw, 32px)",
               fontWeight: 700,
               color: "#704608",
               margin: 0,
@@ -196,7 +196,7 @@ export function HeroSection() {
           <ul
             style={{
               fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-              fontSize: "min(2.34vw, 32px)",
+              fontSize: "clamp(16px, 2.34vw, 32px)",
               color: "#383035",
               fontWeight: 400,
               margin: 0,

@@ -19,14 +19,16 @@ const brands: Brand[] = [
   { name: "Good Molecules", src: "/images/good-molecules.png", fit: "cover", padding: "0" },
 ];
 
-function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
+const circleSize = "clamp(110px, 14vw, 160px)";
+
+function BrandCircle({ brand }: { brand: Brand }) {
   if (brand.src) {
     return (
       <div
         style={{
           position: "relative",
-          width: size,
-          height: size,
+          width: circleSize,
+          height: circleSize,
           borderRadius: "50%",
           overflow: "hidden",
           flexShrink: 0,
@@ -38,7 +40,7 @@ function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
           alt={brand.name}
           fill
           style={{ objectFit: brand.fit ?? "contain", padding: brand.padding ?? "20px" }}
-          sizes={`${size}px`}
+          sizes="160px"
         />
       </div>
     );
@@ -47,8 +49,8 @@ function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
   return (
     <div
       style={{
-        width: size,
-        height: size,
+        width: circleSize,
+        height: circleSize,
         borderRadius: "50%",
         backgroundColor: "#d4c9bb",
         display: "flex",
@@ -61,7 +63,7 @@ function BrandCircle({ brand, size }: { brand: Brand; size: number }) {
       <span
         style={{
           fontFamily: '"MelanieSans", ui-sans-serif, system-ui, sans-serif',
-          fontSize: size * 0.14,
+          fontSize: "clamp(14px, 1.8vw, 22px)",
           fontWeight: 700,
           color: "#704608",
           textAlign: "center",
@@ -101,7 +103,7 @@ export function BrandsSection() {
           }}
         >
           {brands.map((brand) => (
-            <BrandCircle key={brand.name} brand={brand} size={160} />
+            <BrandCircle key={brand.name} brand={brand} />
           ))}
         </div>
       </div>

@@ -42,7 +42,6 @@ export function IGStatsSection() {
           textAlign: "center",
           lineHeight: 1,
           margin: "0 0 40px 0",
-          whiteSpace: "nowrap",
         }}
       >
         IG Analytics &amp; Stats
@@ -57,7 +56,8 @@ export function IGStatsSection() {
           <div
             key={reel.src}
             className="relative overflow-hidden"
-            style={{ flex: 1, height: "420px", backgroundColor: "#c8bfb0" }}
+            className="h-[220px] md:h-[420px]"
+            style={{ flex: 1, backgroundColor: "#c8bfb0" }}
           />
         ))}
       </div>
@@ -69,19 +69,20 @@ export function IGStatsSection() {
       >
         {/* Left ~40%: placeholder */}
         <div
-          style={{ flex: "0 0 40%", maxWidth: "40%", height: "430px", backgroundColor: "#c8bfb0" }}
+          className="w-full md:w-[40%] h-[220px] md:h-[430px]"
+          style={{ backgroundColor: "#c8bfb0" }}
         />
 
         {/* Right ~60%: 2 more video thumbnails side by side */}
         <div
-          className="flex flex-col md:flex-row"
-          style={{ flex: "0 0 60%", maxWidth: "60%", gap: "16px" }}
+          className="flex flex-col md:flex-row w-full md:w-[60%]"
+          style={{ gap: "16px" }}
         >
           {bottomReels.map((reel) => (
             <div
               key={reel.src}
-              className="relative overflow-hidden"
-              style={{ flex: 1, height: "430px", backgroundColor: "#c8bfb0" }}
+              className="relative overflow-hidden h-[220px] md:h-[430px]"
+              style={{ flex: 1, backgroundColor: "#c8bfb0" }}
             />
           ))}
         </div>
